@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="olive_interface Suite1" verbose="1">
+  
+    <test name="yixinApp interface Test" preserve-order="true">
+        <packages>
+            <package name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.userCenter" />
+            <package name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.camera" />
+			<package name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.version2_1" />
+			<package name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.version2_2" />
+        </packages>
+    </test>
+    
+    <test name="yixinApp share flow Test1" preserve-order="true">
+        <classes>
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.CreateUserQrPic" />
+            <!-- mobile，email，new，yixin用户请求观看 -->   
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.AskForWatchCamera" />
+            <!-- 接受mobile，email，拒绝new，yixin观看请求 --> 
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.OwnerAcceptOrReject" />
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.GetAppUserByDeviceId" />
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.PowerSet" />            
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.GetSharePower" />
+        </classes>
+    </test>
+    
+    <test name="yixinApp share flow Test2" preserve-order="true">
+        <classes>
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.SearchShareUser" />
+            <!-- 邀请用户观看，马上取消邀请 --> 
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.InviteCancel" />
+             <!-- 邀请new，yixin用户观看 --> 
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.ShareInvite" />
+             <!-- new接受，yixin拒绝观看 --> 
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.AcceptOrRejectInvite" />
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.GetShareList" />  
+            <!-- mobile和email，new用户退出分享 -->          
+            <class name="com.netease.hzqa.olive.newAppInterface.testcase.yixinApp.share.SharerCancelShare" />
+        </classes>
+    </test>
+</suite>
+
